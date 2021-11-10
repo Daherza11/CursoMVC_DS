@@ -110,11 +110,11 @@ C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyec
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\roslyn\VBCSCompiler.exe
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\Proyecto.Logica.dll
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\Proyecto.Logica.pdb
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.csproj.AssemblyReference.cache
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.csproj.CoreCompileInputs.cache
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.csproj.CopyComplete
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.dll
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.pdb
-C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\Proyecto.Logica.dll
-C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\Proyecto.Logica.pdb
