@@ -1,0 +1,6 @@
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Logica\bin\Debug\Proyecto.Logica.dll
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Logica\bin\Debug\Proyecto.Logica.pdb
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Logica\obj\Debug\Proyecto.Logica.csproj.AssemblyReference.cache
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Logica\obj\Debug\Proyecto.Logica.csproj.CoreCompileInputs.cache
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Logica\obj\Debug\Proyecto.Logica.dll
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Logica\obj\Debug\Proyecto.Logica.pdb
