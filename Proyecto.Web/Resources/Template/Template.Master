@@ -1,5 +1,5 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="Proyecto.Web.Resources.Template.Template" %>
-        <globalization requestEncoding="ISO-8859-1" responseEncoding="ISO-8859-1" />
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="Proyecto.Web.Resources.Template.Template" Debug="true"%>
+<globalization requestEncoding="ISO-8859-1" responseEncoding="ISO-8859-1" />
 
 <!DOCTYPE html>
 
