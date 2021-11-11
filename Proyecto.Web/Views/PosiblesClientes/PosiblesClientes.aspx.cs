@@ -38,6 +38,10 @@ namespace Proyecto.Web.Views.PosiblesClientes
         {
             if (!IsPostBack)
             {
+                if (Session["sessionEmail"] == null)
+                {
+                    Response.Redirect("../Login/Login.aspx");
+                }
                 getPosiblesClientes();
             }     
         }

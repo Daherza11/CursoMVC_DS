@@ -5,7 +5,6 @@
 
 <html>
 <head runat="server">
-
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,12 +59,22 @@
                             <span class="nav-link-text">Contactos</span>
                         </a>
                     </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tareas">
+                        <a class="nav-link" href="../../Views/Tareas/Tareas.aspx">
+                            <i class="fa fa-fw fa-clipboard"></i>
+                            <span class="nav-link-text">Tareas</span>
+                        </a>
+                    </li>
 
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link btn btn-danger" href="../../Views/Login/Login.aspx">
-                            <i class="fa fa-fw fa-sign-out"></i>Salir</a>
+                        <asp:Label runat="server" ID="lblUsuario" CssClass="btn btn-primary"></asp:Label>
+                    </li>
+                    <li class="nav-item">
+                        <asp:LinkButton runat="server" ID="lbSalir" CssClass="btn btn-danger" OnClick="lbSalir_Click">
+                            <i class="fa fa-fw fa-sign-out"></i>Salir
+                        </asp:LinkButton>
                     </li>
                 </ul>
             </div>

@@ -15,6 +15,13 @@ namespace Proyecto.Web.Views.Login
             //Ctrl + K + U es Descomentar
             //if (!IsPostBack)
             //ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script>swal('¡Buen trabajo!','Se realizó proceso con éxito', 'success')</script>");
+            if (!IsPostBack) //La primera vez que carga la página
+            {
+                if (Request.Cookies["cookieEmail"] != null)
+                {
+                    txtEmail.Text = Request.Cookies["cookieEmail"].Value.ToString();
+                }
+            }
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)
@@ -40,7 +47,22 @@ namespace Proyecto.Web.Views.Login
 
                 if (blBandera)
                 {
-                    Response.Redirect("../Index/Index.aspx");
+                    Session["sessionEmail"] = txtEmail.Text;
+
+                    if (chkRecordar.Checked)
+                    {
+                        //Creo objeto cookie
+                        HttpCookie cookie = new HttpCookie("cookieEmail",txtEmail.Text);
+                        cookie.Expires = DateTime.Now.AddDays(2);
+                        Response.Cookies.Add(cookie);
+                    }
+                    else
+                    {
+                        HttpCookie cookie = new HttpCookie("cookieEmail", txtEmail.Text);
+                        cookie.Expires = DateTime.Now.AddDays(-1);
+                        Response.Cookies.Add(cookie);
+                    }
+                    Response.Redirect("../Index/Index.aspx?stEmail="+ txtEmail.Text);
                 }
                 else
                 {

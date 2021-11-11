@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -111,11 +114,13 @@
     <Content Include="Views\Login\Login.aspx" />
     <Content Include="Views\PosiblesClientes\PosiblesClientes.aspx" />
     <Content Include="Views\Registrar\Registrar.aspx" />
+    <Content Include="Views\Tareas\Tareas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PosiblesClientesController.cs" />
+    <Compile Include="Controllers\TareasController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Template\Template.Master.cs">
       <DependentUpon>Template.Master</DependentUpon>
@@ -151,6 +156,13 @@
     </Compile>
     <Compile Include="Views\Registrar\Registrar.aspx.designer.cs">
       <DependentUpon>Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tareas\Tareas.aspx.cs">
+      <DependentUpon>Tareas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Tareas\Tareas.aspx.designer.cs">
+      <DependentUpon>Tareas.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
