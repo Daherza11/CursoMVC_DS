@@ -13,6 +13,7 @@ namespace Proyecto.Web.Views.Index
                 {
                     stEmail = Request.QueryString["stEmail"].ToString();
                 }
+                iCuenta.ImageUrl = "~/Images/" + Session["sessionEmail"].ToString() + ".jpg";
             }
         }
     }
