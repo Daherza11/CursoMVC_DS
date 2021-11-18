@@ -10,3 +10,5 @@ C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyec
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Logica\bin\Debug\EntityFramework.xml
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Logica\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Logica\obj\Debug\Proyecto.Logica.csproj.CopyComplete
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Logica\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Logica\bin\Debug\Newtonsoft.Json.xml

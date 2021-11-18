@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6f79c6fd360848ef91774277796b785c" Name="Diagram1">
+      <Diagram DiagramId="6f79c6fd360848ef91774277796b785c" Name="Diagram1" ZoomLevel="97">
         <EntityTypeShape EntityType="bdGeneralModel.tbEstadoTareas" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
         <EntityTypeShape EntityType="bdGeneralModel.tbPosiblesClientes" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="bdGeneralModel.tbPrioridad" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
@@ -12,6 +12,9 @@
         <EntityTypeShape EntityType="bdGeneralModel.tbUsuarios" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
         <AssociationConnector Association="bdGeneralModel.FK_tbTareas_tbEstadoTareas" ManuallyRouted="false" />
         <AssociationConnector Association="bdGeneralModel.FK_tbTareas_tbPrioridad" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="bdGeneralModel.tbEventos" Width="1.5" PointX="7.625" PointY="5" />
+        <EntityTypeShape EntityType="bdGeneralModel.tbRelacionadoCon" Width="1.5" PointX="5.375" PointY="5.5" />
+        <AssociationConnector Association="bdGeneralModel.FK_tbEventos_tbRelacionadoCon" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

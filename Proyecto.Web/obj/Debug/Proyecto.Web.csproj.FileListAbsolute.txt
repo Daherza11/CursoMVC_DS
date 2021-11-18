@@ -124,3 +124,5 @@ C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyec
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\Proyecto.Logica.dll.config
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\EntityFramework.xml
 C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\Newtonsoft.Json.dll
+C:\Users\dhernandez\Desktop\DHZ\Visual Studio\Proyecto - David Santafe YT\Proyecto\Proyecto.Web\bin\Newtonsoft.Json.xml

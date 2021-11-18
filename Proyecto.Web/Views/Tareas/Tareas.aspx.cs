@@ -81,7 +81,7 @@ namespace Proyecto.Web.Views.Tareas
             }
         }
 
-        protected void btnCancelar_Click(object sender, EventArgs e)
+        protected void btnLimpiar_Click(object sender, EventArgs e)
         {
             lblOpcion.Text = txtCodigo.Text = txtTitularTarea.Text = txtAsunto.Text = txtFechaVencimiento.Text = txtContacto.Text = txtCuenta.Text = txtDescripcion.Text = string.Empty;
             chkEnviarMensaje.Checked = chkRepetir.Checked = false;

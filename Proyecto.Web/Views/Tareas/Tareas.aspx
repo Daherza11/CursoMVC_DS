@@ -119,7 +119,7 @@
                     <div class="form-row">
                         <div class="col-md-12">
                             <asp:Button runat="server" ID="btnGuardar" Text="Guardar" CssClass="btn btn-primary" OnClick="btnGuardar_Click" />
-                            <asp:Button runat="server" ID="btnCancelar" Text="Cancelar" CssClass="btn btn-primary" OnClick="btnCancelar_Click" />
+                            <asp:Button runat="server" ID="btnLimpiar" Text="Limpiar" CssClass="btn btn-primary" OnClick="btnLimpiar_Click" />
                         </div>
                     </div>
                 </div>
