@@ -16,18 +16,18 @@ namespace Proyecto.Logica.BL
                                                              join tbRC in obDatos.tbRelacionadoCon on q.recoCodigo equals tbRC.recoCodigo
                                                              select new Models.clsEventos
                                                              {
-                                                                  CODIGO = q.evenCodigo,
-                                                                  DESCRIPCION = q.evenDescripcion,
-                                                                  FECHA = q.evenFecha,
-                                                                  NOMBRE = q.evenNombre,
-                                                                  PARTICIPANTES = q.evenParticipantes,
-                                                                  RELACIONADO_CON = new Models.clsRelacionadoCon
-                                                                  {
-                                                                      CODIGO = (int)q.recoCodigo,
-                                                                      DESCRIPCION = tbRC.recoDescripcion
-                                                                  },
-                                                                  TODO_DIA = q.evenTodoDia.Equals("S") ? "SI" : "NO"  ,
-                                                                  UBICACION = q.evenUbicacion
+                                                                 CODIGO = q.evenCodigo,
+                                                                 DESCRIPCION = q.evenDescripcion,
+                                                                 FECHA = q.evenFecha,
+                                                                 NOMBRE = q.evenNombre,
+                                                                 PARTICIPANTES = q.evenParticipantes,
+                                                                 RELACIONADO_CON = new Models.clsRelacionadoCon
+                                                                 {
+                                                                     CODIGO = (int)q.recoCodigo,
+                                                                     DESCRIPCION = tbRC.recoDescripcion
+                                                                 },
+                                                                 TODO_DIA = q.evenTodoDia.Equals("S") ? "SI" : "NO",
+                                                                 UBICACION = q.evenUbicacion
                                                              }).ToList();
                     return lstclsEventos;
                 }

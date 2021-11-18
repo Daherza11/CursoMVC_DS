@@ -19,5 +19,17 @@ namespace Proyecto.Web.Controllers
             }
             catch (Exception ex) { throw ex; }
         }
+
+        public object getEventosXMLController()
+        {
+            try
+            {
+                wsServicios.wsServicios obwsServicios = new wsServicios.wsServicios();
+                var lstclsEventos = obwsServicios.getEventosWS_XML();
+
+                return lstclsEventos;
+            }
+            catch (Exception ex) { throw ex; }
+        }
     }
 }

@@ -31,6 +31,8 @@ namespace Proyecto.Web.wsServicios {
         
         private System.Threading.SendOrPostCallback getEventosWSOperationCompleted;
         
+        private System.Threading.SendOrPostCallback getEventosWS_XMLOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -73,6 +75,9 @@ namespace Proyecto.Web.wsServicios {
         public event getEventosWSCompletedEventHandler getEventosWSCompleted;
         
         /// <remarks/>
+        public event getEventosWS_XMLCompletedEventHandler getEventosWS_XMLCompleted;
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/getEventosWS", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public string getEventosWS() {
             object[] results = this.Invoke("getEventosWS", new object[0]);
@@ -100,6 +105,33 @@ namespace Proyecto.Web.wsServicios {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/getEventosWS_XML", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public clsEventos[] getEventosWS_XML() {
+            object[] results = this.Invoke("getEventosWS_XML", new object[0]);
+            return ((clsEventos[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void getEventosWS_XMLAsync() {
+            this.getEventosWS_XMLAsync(null);
+        }
+        
+        /// <remarks/>
+        public void getEventosWS_XMLAsync(object userState) {
+            if ((this.getEventosWS_XMLOperationCompleted == null)) {
+                this.getEventosWS_XMLOperationCompleted = new System.Threading.SendOrPostCallback(this.OngetEventosWS_XMLOperationCompleted);
+            }
+            this.InvokeAsync("getEventosWS_XML", new object[0], this.getEventosWS_XMLOperationCompleted, userState);
+        }
+        
+        private void OngetEventosWS_XMLOperationCompleted(object arg) {
+            if ((this.getEventosWS_XMLCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.getEventosWS_XMLCompleted(this, new getEventosWS_XMLCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -115,6 +147,144 @@ namespace Proyecto.Web.wsServicios {
                 return true;
             }
             return false;
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class clsEventos {
+        
+        private int cODIGOField;
+        
+        private string nOMBREField;
+        
+        private string uBICACIONField;
+        
+        private string pARTICIPANTESField;
+        
+        private string tODO_DIAField;
+        
+        private string fECHAField;
+        
+        private clsRelacionadoCon rELACIONADO_CONField;
+        
+        private string dESCRIPCIONField;
+        
+        /// <remarks/>
+        public int CODIGO {
+            get {
+                return this.cODIGOField;
+            }
+            set {
+                this.cODIGOField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string NOMBRE {
+            get {
+                return this.nOMBREField;
+            }
+            set {
+                this.nOMBREField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string UBICACION {
+            get {
+                return this.uBICACIONField;
+            }
+            set {
+                this.uBICACIONField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PARTICIPANTES {
+            get {
+                return this.pARTICIPANTESField;
+            }
+            set {
+                this.pARTICIPANTESField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TODO_DIA {
+            get {
+                return this.tODO_DIAField;
+            }
+            set {
+                this.tODO_DIAField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string FECHA {
+            get {
+                return this.fECHAField;
+            }
+            set {
+                this.fECHAField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public clsRelacionadoCon RELACIONADO_CON {
+            get {
+                return this.rELACIONADO_CONField;
+            }
+            set {
+                this.rELACIONADO_CONField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string DESCRIPCION {
+            get {
+                return this.dESCRIPCIONField;
+            }
+            set {
+                this.dESCRIPCIONField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class clsRelacionadoCon {
+        
+        private int cODIGOField;
+        
+        private string dESCRIPCIONField;
+        
+        /// <remarks/>
+        public int CODIGO {
+            get {
+                return this.cODIGOField;
+            }
+            set {
+                this.cODIGOField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string DESCRIPCION {
+            get {
+                return this.dESCRIPCIONField;
+            }
+            set {
+                this.dESCRIPCIONField = value;
+            }
         }
     }
     
@@ -140,6 +310,32 @@ namespace Proyecto.Web.wsServicios {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void getEventosWS_XMLCompletedEventHandler(object sender, getEventosWS_XMLCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class getEventosWS_XMLCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal getEventosWS_XMLCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public clsEventos[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((clsEventos[])(this.results[0]));
             }
         }
     }

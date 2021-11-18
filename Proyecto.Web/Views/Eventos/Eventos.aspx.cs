@@ -9,7 +9,7 @@ namespace Proyecto.Web.Views.Eventos
         {
             if (!IsPostBack)
             {
-                getEventos();
+                getEventosXML();
             }
         }
         public void getEventos()
@@ -20,6 +20,23 @@ namespace Proyecto.Web.Views.Eventos
                 List<Logica.Models.clsEventos> lstclsEventos = obEventosController.getEventosController();
 
                 if (lstclsEventos.Count > 0) gvwDatos.DataSource = lstclsEventos;
+                else gvwDatos.DataSource = null;
+
+                gvwDatos.DataBind();
+            }
+            catch (Exception ex)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "Mensaje", "<script> swal('Error','" + ex.Message + "','error') </script>");
+            }
+        }
+        public void getEventosXML()
+        {
+            try
+            {
+                Controllers.EventosController obEventosController = new Controllers.EventosController();
+                var lstclsEventos = obEventosController.getEventosXMLController();
+
+                if (lstclsEventos!=null) gvwDatos.DataSource = lstclsEventos;
                 else gvwDatos.DataSource = null;
 
                 gvwDatos.DataBind();
